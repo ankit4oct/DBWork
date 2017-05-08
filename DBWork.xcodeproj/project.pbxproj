@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7653D1FBA1D498049E1E3923 /* Pods_DBWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2E2D3054C4AC8E6545F43CF /* Pods_DBWork.framework */; };
 		C9E0ED151EC0F5CC00D2E48D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E0ED141EC0F5CC00D2E48D /* AppDelegate.swift */; };
 		C9E0ED171EC0F5CC00D2E48D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E0ED161EC0F5CC00D2E48D /* ViewController.swift */; };
 		C9E0ED1A1EC0F5CC00D2E48D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E0ED181EC0F5CC00D2E48D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48DE8049FA81AA4747D9689B /* Pods-DBWork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBWork.release.xcconfig"; path = "Pods/Target Support Files/Pods-DBWork/Pods-DBWork.release.xcconfig"; sourceTree = "<group>"; };
+		B2E2D3054C4AC8E6545F43CF /* Pods_DBWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DBWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0ED111EC0F5CC00D2E48D /* DBWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E0ED141EC0F5CC00D2E48D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E0ED161EC0F5CC00D2E48D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		C9E0ED1B1EC0F5CC00D2E48D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E0ED1E1EC0F5CC00D2E48D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9E0ED201EC0F5CC00D2E48D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5D295E57C96AEF4B5DF5EB4 /* Pods-DBWork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DBWork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DBWork/Pods-DBWork.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7653D1FBA1D498049E1E3923 /* Pods_DBWork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D87F6C8D0D12925326FC551 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2E2D3054C4AC8E6545F43CF /* Pods_DBWork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7AD52C22572E0019F678019 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5D295E57C96AEF4B5DF5EB4 /* Pods-DBWork.debug.xcconfig */,
+				48DE8049FA81AA4747D9689B /* Pods-DBWork.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C9E0ED081EC0F5CB00D2E48D = {
 			isa = PBXGroup;
 			children = (
 				C9E0ED131EC0F5CC00D2E48D /* DBWork */,
 				C9E0ED121EC0F5CC00D2E48D /* Products */,
+				C7AD52C22572E0019F678019 /* Pods */,
+				1D87F6C8D0D12925326FC551 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9E0ED231EC0F5CC00D2E48D /* Build configuration list for PBXNativeTarget "DBWork" */;
 			buildPhases = (
+				BE80109736568B40C0B5AB6B /* [CP] Check Pods Manifest.lock */,
 				C9E0ED0D1EC0F5CC00D2E48D /* Sources */,
 				C9E0ED0E1EC0F5CC00D2E48D /* Frameworks */,
 				C9E0ED0F1EC0F5CC00D2E48D /* Resources */,
+				1F36339F590432CDFF9A41C6 /* [CP] Embed Pods Frameworks */,
+				8FE5457581D50C9D99EC788F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F36339F590432CDFF9A41C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBWork/Pods-DBWork-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE5457581D50C9D99EC788F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBWork/Pods-DBWork-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE80109736568B40C0B5AB6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9E0ED0D1EC0F5CC00D2E48D /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		C9E0ED241EC0F5CC00D2E48D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5D295E57C96AEF4B5DF5EB4 /* Pods-DBWork.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PPFQTYCRTS;
@@ -272,6 +348,7 @@
 		};
 		C9E0ED251EC0F5CC00D2E48D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48DE8049FA81AA4747D9689B /* Pods-DBWork.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PPFQTYCRTS;

@@ -1,0 +1,6 @@
+framework module Pods_DBWork {
+  umbrella header "Pods-DBWork-umbrella.h"
+
+  export *
+  module * { export * }
+}
