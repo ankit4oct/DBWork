@@ -1,0 +1,27 @@
+# Xcode
+DerivedData/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+
+# Swift Package Manager
+.swiftpm/
+build/
+
+# CocoaPods (legacy — this project now uses Swift Package Manager)
+Pods/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Fastlane / misc
+*.ipa
+*.dSYM.zip
+*.dSYM
